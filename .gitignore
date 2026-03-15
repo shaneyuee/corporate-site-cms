@@ -19,6 +19,8 @@
 
 # production
 /build
+/.deploy-prebuilt
+/release
 
 # misc
 .DS_Store
@@ -32,6 +34,14 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+
+# nginx runtime/certs
+docker/nginx/generated/*
+!docker/nginx/generated/.gitkeep
+docker/nginx/www/*
+!docker/nginx/www/.gitkeep
+docker/nginx/certs/*
+!docker/nginx/certs/.gitkeep
 
 # vercel
 .vercel

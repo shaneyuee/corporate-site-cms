@@ -1,0 +1,75 @@
+name: Deploy Corporate Site CMS
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Prepare env file for build
+        run: |
+          if [ ! -f .env ]; then
+            cp .env.example .env
+          fi
+
+      - name: Build Next.js
+        run: npm run build
+
+      - name: Setup SSH key
+        env:
+          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$DEPLOY_SSH_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+
+      - name: Add known_hosts
+        env:
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
+        run: |
+          PORT=${DEPLOY_PORT:-22}
+          ssh-keyscan -p "$PORT" "$DEPLOY_HOST" >> ~/.ssh/known_hosts
+
+      - name: Deploy prebuilt package to server
+        env:
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
+          DEPLOY_SSH_PORT: ${{ secrets.DEPLOY_PORT }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          DEPLOY_REMOTE_DIR: ${{ secrets.DEPLOY_REMOTE_DIR }}
+        run: |
+          REMOTE_DIR=${DEPLOY_REMOTE_DIR:-/root/website}
+          bash scripts/deploy-prebuilt.sh "$DEPLOY_USER@$DEPLOY_HOST" "$REMOTE_DIR"
+
+      - name: Sync reverse proxy and deployment scripts
+        env:
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          DEPLOY_REMOTE_DIR: ${{ secrets.DEPLOY_REMOTE_DIR }}
+        run: |
+          PORT=${DEPLOY_PORT:-22}
+          REMOTE_DIR=${DEPLOY_REMOTE_DIR:-/root/website}
+          rsync -az -e "ssh -p $PORT" docker-compose.yml "$DEPLOY_USER@$DEPLOY_HOST:$REMOTE_DIR/docker-compose.yml"
+          rsync -az -e "ssh -p $PORT" docker/nginx/ "$DEPLOY_USER@$DEPLOY_HOST:$REMOTE_DIR/docker/nginx/"
+          rsync -az -e "ssh -p $PORT" scripts/deploy-https.sh "$DEPLOY_USER@$DEPLOY_HOST:$REMOTE_DIR/scripts/deploy-https.sh"
+          rsync -az -e "ssh -p $PORT" scripts/renew-https.sh "$DEPLOY_USER@$DEPLOY_HOST:$REMOTE_DIR/scripts/renew-https.sh"
+          ssh -p "$PORT" "$DEPLOY_USER@$DEPLOY_HOST" "chmod +x '$REMOTE_DIR/scripts/deploy-https.sh' '$REMOTE_DIR/scripts/renew-https.sh'"

@@ -1,0 +1,317 @@
+{
+  "company": {
+    "name": "华辰工业科技有限公司",
+    "slogan": "专注工业设备与系统解决方案",
+    "intro": "华辰工业科技深耕工业制造领域，提供清洗设备、输送系统、自动化配套和全周期服务，助力企业提质增效。",
+    "address": "广东省深圳市龙岗区智能制造产业园A3栋",
+    "phone": "0755-88886666",
+    "email": "sales@huachen-ind.com",
+    "bannerTitle": "工业设备整体解决方案",
+    "bannerSubtitle": "从产品研发到交付运维，为企业提供稳定、高效、可持续的工业能力"
+  },
+  "heroBackgroundImage": "/home-hero.webp",
+  "advantages": [
+    "20+年行业经验",
+    "定制化方案设计",
+    "全国服务网络",
+    "快速交付与维护"
+  ],
+  "productCategories": [
+    "超声波清洗设备",
+    "自动化输送系统",
+    "工业环保配套",
+    "非标定制产线"
+  ],
+  "productCategoryCards": [
+    {
+      "name": "超声波清洗设备",
+      "description": "覆盖精密零件、五金件与电子部件清洗场景。",
+      "nameI18n": {
+        "en": "Ultrasonic Cleaning Equipment",
+        "ja": "超音波洗浄設備",
+        "ko": "초음파 세정 장비"
+      },
+      "descriptionI18n": {
+        "en": "For precision parts, metal components, and electronic cleaning scenarios.",
+        "ja": "精密部品・金属部品・電子部品の洗浄用途に対応。",
+        "ko": "정밀 부품, 금속 부품, 전자 부품 세정 공정에 적용됩니다."
+      }
+    },
+    {
+      "name": "自动化输送系统",
+      "description": "支持多工位衔接、节拍同步与在线追溯。",
+      "nameI18n": {
+        "en": "Automated Conveyor Systems",
+        "ja": "自動搬送システム",
+        "ko": "자동화 이송 시스템"
+      },
+      "descriptionI18n": {
+        "en": "Supports multi-station coordination, cycle synchronization, and online traceability.",
+        "ja": "多工程連携・タクト同期・オンライン追跡に対応。",
+        "ko": "다공정 연계, 택트 동기화, 온라인 추적을 지원합니다."
+      }
+    },
+    {
+      "name": "工业环保配套",
+      "description": "面向废气、废液处理的环保设备与系统集成。",
+      "nameI18n": {
+        "en": "Industrial Environmental Solutions",
+        "ja": "産業環境関連設備",
+        "ko": "산업 환경 설비"
+      },
+      "descriptionI18n": {
+        "en": "Integrated equipment and systems for exhaust gas and wastewater treatment.",
+        "ja": "排ガス・排液処理向けの設備およびシステム統合。",
+        "ko": "배기가스·폐수 처리를 위한 설비 및 시스템 통합 솔루션입니다."
+      }
+    },
+    {
+      "name": "非标定制产线",
+      "description": "按工艺需求定制，覆盖设计、制造、交付与运维。",
+      "nameI18n": {
+        "en": "Custom Production Lines",
+        "ja": "非標準カスタムライン",
+        "ko": "비표준 맞춤형 라인"
+      },
+      "descriptionI18n": {
+        "en": "Tailored to process requirements from design and manufacturing to delivery and operations.",
+        "ja": "工程要件に合わせ、設計・製造・導入・運用まで対応。",
+        "ko": "공정 요구에 맞춰 설계·제조·납품·운영까지 맞춤 지원합니다."
+      }
+    }
+  ],
+  "productPageDescription": "覆盖清洗、输送、环保与非标产线，支持方案定制与交付。",
+  "contactFormHint": "提交需求后，我们将在1个工作日内联系您。",
+  "footerIcp": "粤ICP备00000000号",
+  "i18n": {
+    "company": {
+      "name": {
+        "en": "Huachen Industrial Technology Co., Ltd.",
+        "ja": "華辰工業科技株式会社",
+        "ko": "화천 공업기술 유한회사"
+      },
+      "slogan": {
+        "en": "Focused on Industrial Equipment and System Solutions",
+        "ja": "産業設備とシステムソリューションに注力",
+        "ko": "산업 장비 및 시스템 솔루션에 집중"
+      },
+      "intro": {
+        "en": "Huachen Industrial has deep expertise in industrial manufacturing, providing cleaning equipment, conveyor systems, automation support, and full lifecycle services.",
+        "ja": "華辰工業科技は産業製造分野に深く根ざし、洗浄設備、搬送システム、自動化関連およびライフサイクルサービスを提供します。",
+        "ko": "화천공업은 산업 제조 분야에 특화되어 세정 장비, 이송 시스템, 자동화 지원 및 전주기 서비스를 제공합니다."
+      },
+      "address": {
+        "en": "Building A3, Intelligent Manufacturing Park, Longgang District, Shenzhen, Guangdong",
+        "ja": "中国広東省深セン市龍崗区スマート製造産業園A3棟",
+        "ko": "중국 광둥성 선전시 룽강구 스마트제조산업단지 A3동"
+      },
+      "bannerTitle": {
+        "en": "Integrated Industrial Equipment Solutions",
+        "ja": "産業設備のトータルソリューション",
+        "ko": "산업 장비 통합 솔루션"
+      },
+      "bannerSubtitle": {
+        "en": "From R&D to delivery and operations, we provide stable, efficient and sustainable industrial capabilities.",
+        "ja": "研究開発から導入・運用まで、安定・高効率・持続可能な産業能力を提供します。",
+        "ko": "제품 개발부터 납품·운영까지 안정적이고 효율적이며 지속 가능한 산업 역량을 제공합니다."
+      }
+    },
+    "advantages": {
+      "en": [
+        "20+ years of industry experience",
+        "Customized solution design",
+        "Nationwide service network",
+        "Fast delivery and maintenance"
+      ],
+      "ja": [
+        "20年以上の業界経験",
+        "カスタマイズ設計",
+        "全国サービスネットワーク",
+        "迅速な納入と保守"
+      ],
+      "ko": [
+        "20년 이상의 업계 경험",
+        "맞춤형 솔루션 설계",
+        "전국 서비스 네트워크",
+        "신속한 납품 및 유지보수"
+      ]
+    },
+    "productCategories": {
+      "en": [
+        "Ultrasonic Cleaning Equipment",
+        "Automated Conveyor Systems",
+        "Industrial Environmental Solutions",
+        "Custom Production Lines"
+      ],
+      "ja": [
+        "超音波洗浄設備",
+        "自動搬送システム",
+        "産業環境関連設備",
+        "非標準カスタムライン"
+      ],
+      "ko": [
+        "초음파 세정 장비",
+        "자동화 이송 시스템",
+        "산업 환경 설비",
+        "비표준 맞춤형 라인"
+      ]
+    },
+    "productCategoryDescriptions": {
+      "en": [
+        "For precision parts, metal components, and electronic cleaning scenarios.",
+        "Supports multi-station coordination, cycle synchronization, and online traceability.",
+        "Integrated equipment and systems for exhaust gas and wastewater treatment.",
+        "Tailored to process requirements from design and manufacturing to delivery and operations."
+      ],
+      "ja": [
+        "精密部品・金属部品・電子部品の洗浄用途に対応。",
+        "多工程連携・タクト同期・オンライン追跡に対応。",
+        "排ガス・排液処理向けの設備およびシステム統合。",
+        "工程要件に合わせ、設計・製造・導入・運用まで対応。"
+      ],
+      "ko": [
+        "정밀 부품, 금속 부품, 전자 부품 세정 공정에 적용됩니다.",
+        "다공정 연계, 택트 동기화, 온라인 추적을 지원합니다.",
+        "배기가스·폐수 처리를 위한 설비 및 시스템 통합 솔루션입니다.",
+        "공정 요구에 맞춰 설계·제조·납품·운영까지 맞춤 지원합니다."
+      ]
+    },
+    "productPageDescription": {
+      "en": "Covering cleaning, conveying, environmental and custom production lines.",
+      "ja": "洗浄・搬送・環境対応・カスタムラインに対応します。",
+      "ko": "세척, 이송, 환경 설비 및 맞춤형 라인을 제공합니다."
+    },
+    "contactFormHint": {
+      "en": "After submitting your request, we will contact you within 1 business day.",
+      "ja": "ご要望送信後、1営業日以内にご連絡します。",
+      "ko": "요청을 제출하시면 1영업일 이내에 연락드리겠습니다."
+    },
+    "footerIcp": {
+      "en": "Guangdong ICP No. 00000000",
+      "ja": "粤ICP備案 00000000号",
+      "ko": "광둥 ICP 등록번호 00000000"
+    }
+  },
+  "seed": {
+    "products": [
+      {
+        "name": "HC-800全自动超声波清洗机",
+        "category": "超声波清洗设备",
+        "summary": "适用于五金、电子、汽车零部件等高标准清洗场景。",
+        "image": "/products/p1.jpg",
+        "features": [
+          "多槽联动工艺",
+          "PLC智能控制",
+          "节能低噪运行"
+        ]
+      },
+      {
+        "name": "HC-1200喷淋清洗线",
+        "category": "超声波清洗设备",
+        "summary": "连续式喷淋清洗，适配中大批量零件处理。",
+        "image": "/products/p2.jpg",
+        "features": [
+          "模块化结构",
+          "维护便捷",
+          "高效节拍"
+        ]
+      },
+      {
+        "name": "HC-RB智能输送系统",
+        "category": "自动化输送系统",
+        "summary": "支持多工位智能分拣与在线追溯。",
+        "image": "/products/p3.jpg",
+        "features": [
+          "柔性扩展",
+          "实时监控",
+          "高稳定性"
+        ]
+      },
+      {
+        "name": "HC-VOC废气处理装置",
+        "category": "工业环保配套",
+        "summary": "面向喷涂、化工等场景的废气净化解决方案。",
+        "image": "/products/p4.jpg",
+        "features": [
+          "净化效率高",
+          "运行成本低",
+          "智能告警"
+        ]
+      }
+    ],
+    "news": [
+      {
+        "title": "华辰工业新产线交付华南客户",
+        "titleI18n": {
+          "en": "Huachen Delivers New Production Line to South China Client",
+          "ja": "華辰工業、華南顧客向け新ラインを納入",
+          "ko": "화천공업, 화남 고객사에 신규 생산라인 납품"
+        },
+        "date": "2026-01-15",
+        "summary": "自动化清洗与输送一体化产线成功投运，产能提升30%。",
+        "summaryI18n": {
+          "en": "The integrated automation line for cleaning and conveying is now in operation, increasing capacity by 30%.",
+          "ja": "自動洗浄・搬送一体ラインが稼働し、生産能力が30%向上しました。",
+          "ko": "자동 세정·이송 통합 라인이 가동되어 생산능력이 30% 향상되었습니다."
+        },
+        "content": "本次项目覆盖清洗、烘干、输送、检测等关键环节，帮助客户实现高效稳定生产。"
+        ,
+        "contentI18n": {
+          "en": "This project covered key stages including cleaning, drying, conveying, and inspection, helping the customer achieve efficient and stable production.",
+          "ja": "本プロジェクトは洗浄・乾燥・搬送・検査などの主要工程をカバーし、顧客の高効率かつ安定した生産を実現しました。",
+          "ko": "이번 프로젝트는 세정, 건조, 이송, 검사 등 핵심 공정을 포함하여 고객사의 고효율·안정 생산을 지원했습니다."
+        }
+      },
+      {
+        "title": "公司通过智能制造能力再认证",
+        "titleI18n": {
+          "en": "Company Passes Smart Manufacturing Capability Re-Certification",
+          "ja": "スマート製造能力の再認証を取得",
+          "ko": "스마트 제조 역량 재인증 통과"
+        },
+        "date": "2025-12-08",
+        "summary": "在研发、生产、交付与服务环节持续强化数字化能力。",
+        "summaryI18n": {
+          "en": "We continue to strengthen digital capabilities across R&D, production, delivery, and service.",
+          "ja": "研究開発・生産・納入・サービスの各段階でデジタル能力を継続的に強化しています。",
+          "ko": "R&D, 생산, 납품, 서비스 전 과정에서 디지털 역량을 지속적으로 강화하고 있습니다."
+        },
+        "content": "华辰工业持续投入研发与流程优化，推动产品质量与交付效率双提升。"
+        ,
+        "contentI18n": {
+          "en": "Huachen keeps investing in R&D and process optimization to improve both product quality and delivery efficiency.",
+          "ja": "華辰工業は研究開発とプロセス最適化への投資を継続し、品質と納入効率の双方を向上させています。",
+          "ko": "화천공업은 연구개발과 공정 최적화에 지속 투자하여 제품 품질과 납품 효율을 함께 개선하고 있습니다."
+        }
+      },
+      {
+        "title": "华辰工业亮相华东工业展",
+        "titleI18n": {
+          "en": "Huachen Appears at East China Industrial Expo",
+          "ja": "華辰工業、華東工業展示会に出展",
+          "ko": "화천공업, 화동 산업 전시회 참가"
+        },
+        "date": "2025-11-20",
+        "summary": "展示清洗设备与环保配套方案，获多家制造企业关注。",
+        "summaryI18n": {
+          "en": "The company showcased cleaning equipment and environmental solutions, attracting strong interest from manufacturers.",
+          "ja": "洗浄設備と環境対応ソリューションを展示し、多くの製造企業から注目を集めました。",
+          "ko": "세정 장비와 환경 솔루션을 선보여 다수 제조기업의 관심을 받았습니다."
+        },
+        "content": "展会期间，华辰工业与多家客户达成合作意向，共同推进智能制造升级。"
+        ,
+        "contentI18n": {
+          "en": "During the expo, Huachen reached cooperation intentions with multiple clients to jointly advance smart manufacturing upgrades.",
+          "ja": "展示会期間中、華辰工業は複数の顧客と協業意向を確認し、スマート製造の高度化を共同で推進しました。",
+          "ko": "전시회 기간 동안 화천공업은 여러 고객사와 협력 의향을 확인하고 스마트 제조 고도화를 함께 추진했습니다."
+        }
+      }
+    ],
+    "admins": [
+      {
+        "username": "admin",
+        "passwordHash": "e21209ceae533bb785701385e32094d68972974a89787c4e65d6da882f8d8585"
+      }
+    ]
+  }
+}

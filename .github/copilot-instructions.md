@@ -1,0 +1,13 @@
+- [x] Verify that the copilot-instructions.md file in the .github directory is created.
+- [x] Clarify Project Requirements
+- [x] Scaffold the Project
+- [x] Customize the Project
+- [x] Install Required Extensions (No extensions needed)
+- [x] Compile the Project
+- [x] Create and Run Task
+- [x] Launch the Project (Skipped: awaiting user confirmation for debug mode)
+- [x] Ensure Documentation is Complete
+- After any code, style, config, or deployment change, default to deploying to the production machine and verifying the affected live pages unless the user explicitly says not to deploy.
+- Work through each checklist item systematically.
+- Keep communication concise and focused.
+- Follow development best practices.
