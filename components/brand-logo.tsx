@@ -8,16 +8,32 @@ type BrandLogoProps = {
 };
 
 export default function BrandLogo({ companyName, slogan, compact = false, subdued = false }: BrandLogoProps) {
+  const logoText = (() => {
+    const trimmed = companyName.trim();
+    if (/^[\u4e00-\u9fff]/.test(trimmed)) {
+      return trimmed.slice(0, 2);
+    }
+
+    const initials = trimmed
+      .split(/\s+/)
+      .filter(Boolean)
+      .slice(0, 2)
+      .map((part) => part[0]?.toUpperCase() ?? "")
+      .join("");
+
+    return initials || "JW";
+  })();
+
   return (
     <Link href="/" className="group inline-flex items-center gap-3" aria-label={companyName}>
       <span
         className={`relative inline-flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl text-white ring-1 transition ${
           subdued
-            ? "bg-gradient-to-br from-white/28 via-sky-300/28 to-cyan-200/22 shadow-md shadow-slate-900/10 ring-white/20"
-            : "bg-gradient-to-br from-sky-500 via-cyan-500 to-emerald-500 shadow-lg shadow-sky-500/25 ring-white/40"
+            ? "bg-gradient-to-br from-white/24 via-emerald-300/24 to-lime-200/18 shadow-md shadow-slate-900/10 ring-white/20"
+            : "bg-gradient-to-br from-emerald-600 via-green-500 to-lime-500 shadow-lg shadow-emerald-700/25 ring-white/40"
         }`}
       >
-        <span className="text-lg font-black tracking-tight">HC</span>
+        <span className="text-lg font-black tracking-tight">{logoText}</span>
         <span
           className={`absolute inset-0 ${
             subdued
@@ -31,7 +47,7 @@ export default function BrandLogo({ companyName, slogan, compact = false, subdue
           className={`block truncate text-base leading-tight transition-colors ${
             subdued
               ? "font-semibold text-white/78 group-hover:text-white/92"
-              : "font-bold text-slate-900 group-hover:text-sky-700"
+              : "font-bold text-slate-900 group-hover:text-emerald-800"
           }`}
         >
           {companyName}

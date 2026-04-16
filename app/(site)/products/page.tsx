@@ -6,29 +6,6 @@ import { siteDict } from "@/lib/site-dictionary";
 
 export const dynamic = "force-dynamic";
 
-const categoryFallbackMap: Record<string, { en: string; ja: string; ko: string }> = {
-  超声波清洗设备: {
-    en: "Ultrasonic Cleaning Equipment",
-    ja: "超音波洗浄設備",
-    ko: "초음파 세정 장비",
-  },
-  自动化输送系统: {
-    en: "Automated Conveyor Systems",
-    ja: "自動搬送システム",
-    ko: "자동화 이송 시스템",
-  },
-  工业环保配套: {
-    en: "Industrial Environmental Solutions",
-    ja: "産業環境関連設備",
-    ko: "산업 환경 설비",
-  },
-  非标定制产线: {
-    en: "Custom Production Lines",
-    ja: "非標準カスタムライン",
-    ko: "비표준 맞춤형 라인",
-  },
-};
-
 export default async function ProductsPage() {
   const locale = await getRequestPreferredLocale();
   const dict = siteDict[locale];
@@ -48,7 +25,7 @@ export default async function ProductsPage() {
   const catalogItems = products.map((product) => {
     const categoryLabel = product.categoryI18n?.[locale]
       ?? categoryNamesByZh.get(product.category)
-      ?? (locale === "zh" ? product.category : categoryFallbackMap[product.category]?.[locale] ?? product.categoryI18n?.zh)
+      ?? product.categoryI18n?.zh
       ?? product.category;
 
     categorySet.add(categoryLabel);

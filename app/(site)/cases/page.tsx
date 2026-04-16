@@ -39,7 +39,7 @@ export default async function CasesPage() {
       ) : (
         <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
           {cases.map((item) => (
-            <article key={item.key} className="rounded-xl border border-border bg-white p-5 shadow-sm">
+            <article key={item.key} className="rounded-xl border border-border bg-[#fcfefb] p-5 shadow-sm shadow-emerald-900/5">
               <p className="text-sm font-semibold text-primary">{item.category}</p>
               <h2 className="mt-1 text-xl font-semibold text-gray-900">{item.title || dict.successCases}</h2>
               <p className="mt-2 text-sm text-muted">{item.summary}</p>

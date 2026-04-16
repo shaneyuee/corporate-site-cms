@@ -10,6 +10,14 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "http",
+        hostname: "precious-stone.cn",
+      },
+      {
+        protocol: "https",
+        hostname: "precious-stone.cn",
+      },
+      {
+        protocol: "http",
         hostname: "81.71.32.222",
       },
       {

@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^cd /Users/shane/website && node - <<'NODE'\nconst queries = \\['jade bangle','jade pendant','jade guanyin pendant','jade pixiu bracelet','jade ring'\\];\nfor \\(const q of queries\\) \\{\n  const url = `https://commons\\.wikimedia\\.org/w/api\\.php\\?action=query&generator=search&gsrnamespace=6&gsrsearch=\\$\\{encodeURIComponent\\(q\\)\\}&gsrlimit=3&prop=imageinfo&iiprop=url&iiurlwidth=1200&format=json&origin=\\*`;\n  const res = await fetch\\(url\\);\n  const data = await res\\.json\\(\\);\n  console\\.log\\('\\\\nQUERY', q\\);\n  const pages = Object\\.values\\(data\\.query\\?\\.pages \\|\\| \\{\\}\\);\n  for \\(const page of pages\\) \\{\n    const info = page\\.imageinfo\\?\\.\\[0\\];\n    console\\.log\\(page\\.title, info\\?\\.thumburl \\|\\| info\\?\\.url \\|\\| ''\\);\n  \\}\n\\}\nNODE$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

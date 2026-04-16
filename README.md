@@ -177,9 +177,42 @@ bash scripts/deploy-prebuilt.sh
 该脚本执行流程：
 - 本地执行 `npm run build`
 - 本地生成 `.deploy-prebuilt`（仅运行所需文件）
+- 同步 `.env` / `docker-compose.yml` / `docker/nginx` / HTTPS 脚本到远端
 - `rsync` 到远端
 - 远端 `docker build`（不执行源码编译）
-- 远端 `docker compose up -d --no-build --force-recreate --no-deps web`
+- 远端 `docker compose up -d --no-build --force-recreate postgres minio minio-init web nginx`
+
+### 同机部署第二套副本
+
+如果要在**同一台服务器**部署第二套站点副本，请使用：
+
+1. 新建一个本地环境文件，例如 `.env.my-planet`：
+
+```bash
+cp .env .env.my-planet
+```
+
+2. 至少覆盖这些变量，避免与现有副本端口冲突：
+
+```bash
+WEB_IMAGE=website-my-planet-web:latest
+WEB_PUBLISHED_PORT=3001
+POSTGRES_PUBLISHED_PORT=5433
+MINIO_API_PORT=9100
+MINIO_CONSOLE_PORT=9101
+NGINX_HTTP_PORT=8081
+NGINX_HTTPS_PORT=8444
+MINIO_PUBLIC_URL=http://precious-stone.cn:8081
+CERTBOT_DOMAIN=precious-stone.cn
+```
+
+3. 使用独立远端目录部署：
+
+```bash
+DEPLOY_ENV_FILE=.env.my-planet bash scripts/deploy-prebuilt.sh root@81.71.32.222 /root/website-my-planet
+```
+
+这样第二套副本会以独立 compose 项目运行，推荐访问地址为：`http://precious-stone.cn:8081`
 
 ## 启用 HTTPS（Nginx + Let's Encrypt）
 

@@ -68,25 +68,25 @@ export default function ContactDemandForm({ locale, placeholders, messages }: Pr
       <input
         value={name}
         onChange={(event) => setName(event.target.value)}
-        className="w-full rounded-xl border border-slate-200 px-3 py-2.5 text-sm outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-100"
+        className="w-full rounded-xl border border-emerald-100 bg-[#fdfefc] px-3 py-2.5 text-sm outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100"
         placeholder={placeholders.name}
       />
       <input
         value={phone}
         onChange={(event) => setPhone(event.target.value)}
-        className="w-full rounded-xl border border-slate-200 px-3 py-2.5 text-sm outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-100"
+        className="w-full rounded-xl border border-emerald-100 bg-[#fdfefc] px-3 py-2.5 text-sm outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100"
         placeholder={placeholders.phone}
       />
       <textarea
         value={requirement}
         onChange={(event) => setRequirement(event.target.value)}
-        className="h-32 w-full rounded-xl border border-slate-200 px-3 py-2.5 text-sm outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-100"
+        className="h-32 w-full rounded-xl border border-emerald-100 bg-[#fdfefc] px-3 py-2.5 text-sm outline-none transition focus:border-emerald-500 focus:ring-2 focus:ring-emerald-100"
         placeholder={placeholders.requirement}
       />
       <button
         type="submit"
         disabled={isSubmitting}
-        className="inline-flex min-h-11 items-center justify-center rounded-full bg-gradient-to-r from-sky-600 to-cyan-500 px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-sky-400/30 disabled:opacity-60"
+        className="inline-flex min-h-11 items-center justify-center rounded-full bg-gradient-to-r from-emerald-700 to-green-500 px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-emerald-700/30 disabled:opacity-60"
       >
         {isSubmitting ? `${placeholders.submit}...` : placeholders.submit}
       </button>

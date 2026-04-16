@@ -77,7 +77,7 @@ export default function AdminLoginForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="mt-6 space-y-3 rounded-xl border border-border bg-white p-5">
+    <form onSubmit={handleSubmit} className="mt-6 space-y-3 rounded-xl border border-border bg-[#fcfefb] p-5 shadow-sm shadow-emerald-900/5">
       <input
         value={username}
         onChange={(event) => setUsername(event.target.value)}
@@ -101,7 +101,7 @@ export default function AdminLoginForm() {
         <button
           type="button"
           onClick={loadCaptcha}
-          className="rounded-md border border-border bg-white px-3 py-2 text-sm text-gray-700"
+          className="rounded-md border border-border bg-emerald-50/70 px-3 py-2 text-sm text-gray-700"
         >
           {captchaQuestion || "加载中..."}
         </button>

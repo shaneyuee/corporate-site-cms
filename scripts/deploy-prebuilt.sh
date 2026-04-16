@@ -7,6 +7,7 @@ cd "$ROOT_DIR"
 REMOTE_HOST="${1:-${DEPLOY_REMOTE_HOST:-}}"
 REMOTE_DIR="${2:-${DEPLOY_REMOTE_DIR:-/root/website}}"
 REMOTE_PORT="${DEPLOY_SSH_PORT:-22}"
+LOCAL_ENV_FILE="${DEPLOY_ENV_FILE:-.env}"
 LOCAL_DEPLOY_DIR=".deploy-prebuilt"
 
 if [[ -z "$REMOTE_HOST" ]]; then
@@ -15,11 +16,22 @@ if [[ -z "$REMOTE_HOST" ]]; then
   exit 1
 fi
 
-if [[ ! -f ".env" ]]; then
-  echo "[INFO] .env 不存在，已从 .env.example 复制，请先确认配置后重试。"
-  cp .env.example .env
+if [[ ! -f "$LOCAL_ENV_FILE" ]]; then
+  echo "[INFO] 部署环境文件不存在: $LOCAL_ENV_FILE"
+  if [[ "$LOCAL_ENV_FILE" == ".env" ]]; then
+    cp .env.example .env
+    echo "[INFO] 已从 .env.example 复制到 .env，请先确认配置后重试。"
+  fi
   exit 1
 fi
+
+set -a
+source "$LOCAL_ENV_FILE"
+set +a
+
+WEB_IMAGE="${WEB_IMAGE:-website-web:latest}"
+SITE_PORT="${NGINX_HTTP_PORT:-${WEB_PUBLISHED_PORT:-3000}}"
+SITE_HOST_HINT="${CERTBOT_DOMAIN:-<your-host>}"
 
 if ! command -v rsync >/dev/null 2>&1; then
   echo "[ERROR] 未找到 rsync，请先安装后重试。"
@@ -50,17 +62,25 @@ EXPOSE 3000
 CMD ["node", "server.js"]
 EOF
 
-echo "[3/5] 同步预编译产物到远端: $REMOTE_HOST:$REMOTE_DIR/.deploy-prebuilt"
-ssh -p "$REMOTE_PORT" "$REMOTE_HOST" "mkdir -p '$REMOTE_DIR/.deploy-prebuilt'"
+mkdir -p docker/nginx/generated docker/nginx/www docker/nginx/certs
+cp docker/nginx/templates/http.conf.template docker/nginx/generated/default.conf
+
+echo "[3/5] 同步运行时文件到远端: $REMOTE_HOST:$REMOTE_DIR"
+ssh -p "$REMOTE_PORT" "$REMOTE_HOST" "mkdir -p '$REMOTE_DIR/.deploy-prebuilt' '$REMOTE_DIR/docker' '$REMOTE_DIR/scripts'"
+rsync -az -e "ssh -p $REMOTE_PORT" "$LOCAL_ENV_FILE" "$REMOTE_HOST:$REMOTE_DIR/.env"
+rsync -az -e "ssh -p $REMOTE_PORT" docker-compose.yml "$REMOTE_HOST:$REMOTE_DIR/docker-compose.yml"
+rsync -az -e "ssh -p $REMOTE_PORT" docker/nginx/ "$REMOTE_HOST:$REMOTE_DIR/docker/nginx/"
+rsync -az -e "ssh -p $REMOTE_PORT" scripts/deploy-https.sh "$REMOTE_HOST:$REMOTE_DIR/scripts/deploy-https.sh"
+rsync -az -e "ssh -p $REMOTE_PORT" scripts/renew-https.sh "$REMOTE_HOST:$REMOTE_DIR/scripts/renew-https.sh"
 rsync -az --delete -e "ssh -p $REMOTE_PORT" "$LOCAL_DEPLOY_DIR/" "$REMOTE_HOST:$REMOTE_DIR/.deploy-prebuilt/"
 
 echo "[4/5] 远端构建运行镜像（不编译源码）..."
-ssh -p "$REMOTE_PORT" "$REMOTE_HOST" "cd '$REMOTE_DIR/.deploy-prebuilt' && docker build -t website_web:latest ."
+ssh -p "$REMOTE_PORT" "$REMOTE_HOST" "chmod +x '$REMOTE_DIR/scripts/deploy-https.sh' '$REMOTE_DIR/scripts/renew-https.sh' && cd '$REMOTE_DIR/.deploy-prebuilt' && docker build -t '$WEB_IMAGE' ."
 
-echo "[5/5] 重启 web 服务（--no-build --no-deps）..."
-ssh -p "$REMOTE_PORT" "$REMOTE_HOST" "cd '$REMOTE_DIR' && COMPOSE_CMD='docker compose'; if ! docker compose version >/dev/null 2>&1; then COMPOSE_CMD='docker-compose'; fi; \$COMPOSE_CMD up -d --no-build --force-recreate --no-deps web && \$COMPOSE_CMD ps -a"
+echo "[5/5] 启动远端副本服务栈..."
+ssh -p "$REMOTE_PORT" "$REMOTE_HOST" "cd '$REMOTE_DIR' && if docker compose version >/dev/null 2>&1; then docker compose --env-file .env up -d --no-build --force-recreate postgres minio minio-init web nginx && docker compose --env-file .env ps -a; else docker-compose up -d --no-build --force-recreate postgres minio minio-init web nginx && docker-compose ps -a; fi"
 
 echo "[DONE] 预编译部署完成。"
 echo "- 远端主机: $REMOTE_HOST"
 echo "- 远端目录: $REMOTE_DIR"
-echo "- 服务地址: http://<your-host>:3000"
+echo "- 服务地址: http://$SITE_HOST_HINT:$SITE_PORT"

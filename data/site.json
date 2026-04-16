@@ -1,310 +1,393 @@
 {
   "company": {
-    "name": "华辰工业科技有限公司",
-    "slogan": "专注工业设备与系统解决方案",
-    "intro": "华辰工业科技深耕工业制造领域，提供清洗设备、输送系统、自动化配套和全周期服务，助力企业提质增效。",
-    "address": "广东省深圳市龙岗区智能制造产业园A3栋",
-    "phone": "0755-88886666",
-    "email": "sales@huachen-ind.com",
-    "bannerTitle": "工业设备整体解决方案",
-    "bannerSubtitle": "从产品研发到交付运维，为企业提供稳定、高效、可持续的工业能力"
+    "name": "玉石大世界",
+    "slogan": "东方玉韵，日常珍藏",
+    "intro": "玉石大世界是一家专注和田玉、翡翠、碧玉与墨玉精品零售的线上玉器商城。我们坚持实物拍摄、清晰标注与耐心讲解，希望让日常佩戴、送礼挑选和入门收藏都变得更轻松、更安心。",
+    "address": "广东省肇庆市四会市东城街道国际玉器城电商中心",
+    "phone": "400-800-1688",
+    "email": "service@precious-stone.cn",
+    "bannerTitle": "玉石大世界 · 玉器商城",
+    "bannerSubtitle": "甄选手镯、吊坠、玉牌与礼赠摆件，为日常佩戴、节庆送礼与轻收藏场景提供更安心的选玉体验。"
   },
-  "heroBackgroundImage": "/home-hero.webp",
+  "heroBackgroundImage": "/jade/store-cover.jpg",
   "advantages": [
-    "20+年行业经验",
-    "定制化方案设计",
-    "全国服务网络",
-    "快速交付与维护"
+    "源头甄选玉料",
+    "支持视频看货与复检",
+    "附送礼盒与保养建议",
+    "7天鉴赏期无忧服务"
   ],
   "productCategories": [
-    "超声波清洗设备",
-    "自动化输送系统",
-    "工业环保配套",
-    "非标定制产线"
+    "吊坠挂件",
+    "手镯手串",
+    "玉戒玉牌",
+    "礼赠摆件"
   ],
   "productCategoryCards": [
     {
-      "name": "超声波清洗设备",
-      "description": "覆盖精密零件、五金件与电子部件清洗场景。",
+      "name": "吊坠挂件",
+      "description": "适合日常佩戴与节庆送礼，兼顾寓意与搭配。",
       "nameI18n": {
-        "en": "Ultrasonic Cleaning Equipment",
-        "ja": "超音波洗浄設備",
-        "ko": "초음파 세정 장비"
+        "en": "Pendants & Charms",
+        "ja": "ペンダント・掛け飾り",
+        "ko": "펜던트·걸이 장식"
       },
       "descriptionI18n": {
-        "en": "For precision parts, metal components, and electronic cleaning scenarios.",
-        "ja": "精密部品・金属部品・電子部品の洗浄用途に対応。",
-        "ko": "정밀 부품, 금속 부품, 전자 부품 세정 공정에 적용됩니다."
+        "en": "Meaningful pieces for daily wear and thoughtful gifting.",
+        "ja": "日常使いにも贈り物にも合わせやすい玉器です。",
+        "ko": "데일리 착용과 선물용으로 모두 잘 어울립니다."
       }
     },
     {
-      "name": "自动化输送系统",
-      "description": "支持多工位衔接、节拍同步与在线追溯。",
+      "name": "手镯手串",
+      "description": "圆润线条更显腕间气质，适合四季佩戴。",
       "nameI18n": {
-        "en": "Automated Conveyor Systems",
-        "ja": "自動搬送システム",
-        "ko": "자동화 이송 시스템"
+        "en": "Bangles & Bracelets",
+        "ja": "バングル・ブレスレット",
+        "ko": "뱅글·팔찌"
       },
       "descriptionI18n": {
-        "en": "Supports multi-station coordination, cycle synchronization, and online traceability.",
-        "ja": "多工程連携・タクト同期・オンライン追跡に対応。",
-        "ko": "다공정 연계, 택트 동기화, 온라인 추적을 지원합니다."
+        "en": "Graceful wrist pieces with smooth form and year-round versatility.",
+        "ja": "手元を上品に見せる、四季使いやすいアイテムです。",
+        "ko": "손목선을 부드럽게 살려 주는 사계절용 아이템입니다."
       }
     },
     {
-      "name": "工业环保配套",
-      "description": "面向废气、废液处理的环保设备与系统集成。",
+      "name": "玉戒玉牌",
+      "description": "兼顾古雅造型与轻量佩戴，适合通勤搭配。",
       "nameI18n": {
-        "en": "Industrial Environmental Solutions",
-        "ja": "産業環境関連設備",
-        "ko": "산업 환경 설비"
+        "en": "Rings & Jade Plaques",
+        "ja": "玉指輪・玉牌",
+        "ko": "옥반지·옥패"
       },
       "descriptionI18n": {
-        "en": "Integrated equipment and systems for exhaust gas and wastewater treatment.",
-        "ja": "排ガス・排液処理向けの設備およびシステム統合。",
-        "ko": "배기가스·폐수 처리를 위한 설비 및 시스템 통합 솔루션입니다."
+        "en": "Elegant shapes for refined daily styling and light gifting.",
+        "ja": "軽やかに身につけられる、上品なデザインの玉器です。",
+        "ko": "가볍고 단정한 스타일로 일상 코디에 잘 어울립니다."
       }
     },
     {
-      "name": "非标定制产线",
-      "description": "按工艺需求定制，覆盖设计、制造、交付与运维。",
+      "name": "礼赠摆件",
+      "description": "适合新店开业、乔迁和节庆送礼的体面之选。",
       "nameI18n": {
-        "en": "Custom Production Lines",
-        "ja": "非標準カスタムライン",
-        "ko": "비표준 맞춤형 라인"
+        "en": "Gift Ornaments",
+        "ja": "贈答用置物",
+        "ko": "선물용 장식품"
       },
       "descriptionI18n": {
-        "en": "Tailored to process requirements from design and manufacturing to delivery and operations.",
-        "ja": "工程要件に合わせ、設計・製造・導入・運用まで対応。",
-        "ko": "공정 요구에 맞춰 설계·제조·납품·운영까지 맞춤 지원합니다."
+        "en": "Display pieces suited for opening gifts, housewarming, and festive occasions.",
+        "ja": "開業祝いや引っ越し祝いにも選びやすい置物です。",
+        "ko": "개업, 집들이, 명절 선물용으로 잘 어울리는 장식품입니다."
       }
     }
   ],
-  "productPageDescription": "覆盖清洗、输送、环保与非标产线，支持方案定制与交付。",
-  "contactFormHint": "提交需求后，我们将在1个工作日内联系您。",
-  "footerIcp": "粤ICP备00000000号",
+  "productPageDescription": "从和田玉到翡翠碧玉，覆盖日常佩戴、礼赠收藏与节庆选礼场景。",
+  "contactFormHint": "留下您想看的款式、预算或送礼对象，我们会安排顾问为您一对一推荐。",
+  "footerIcp": "粤ICP备2026000000号 | 玉石大世界",
   "i18n": {
     "company": {
       "name": {
-        "en": "Huachen Industrial Technology Co., Ltd.",
-        "ja": "華辰工業科技株式会社",
-        "ko": "화천 공업기술 유한회사"
+        "en": "Jade World",
+        "ja": "玉石大世界",
+        "ko": "옥석대세계"
       },
       "slogan": {
-        "en": "Focused on Industrial Equipment and System Solutions",
-        "ja": "産業設備とシステムソリューションに注力",
-        "ko": "산업 장비 및 시스템 솔루션에 집중"
+        "en": "Oriental jade beauty for everyday keepsakes",
+        "ja": "東方の玉の美を日常に",
+        "ko": "동양의 옥미를 일상 속에"
       },
       "intro": {
-        "en": "Huachen Industrial has deep expertise in industrial manufacturing, providing cleaning equipment, conveyor systems, automation support, and full lifecycle services.",
-        "ja": "華辰工業科技は産業製造分野に深く根ざし、洗浄設備、搬送システム、自動化関連およびライフサイクルサービスを提供します。",
-        "ko": "화천공업은 산업 제조 분야에 특화되어 세정 장비, 이송 시스템, 자동화 지원 및 전주기 서비스를 제공합니다."
+        "en": "Jade World is an online boutique focused on curated Hetian jade, jadeite, green jade, and black jade pieces for daily wear, gifting, and entry-level collecting.",
+        "ja": "玉石大世界は和田玉、翡翠、碧玉、墨玉を中心に、日常使い・贈り物・ライトコレクション向けの玉器を扱うオンラインショップです。",
+        "ko": "옥석대세계는 허톈옥, 비취, 벽옥, 묵옥을 중심으로 일상 착용, 선물, 입문 수집용 옥기를 선별해 소개하는 온라인 스토어입니다."
       },
       "address": {
-        "en": "Building A3, Intelligent Manufacturing Park, Longgang District, Shenzhen, Guangdong",
-        "ja": "中国広東省深セン市龍崗区スマート製造産業園A3棟",
-        "ko": "중국 광둥성 선전시 룽강구 스마트제조산업단지 A3동"
+        "en": "E-commerce Center, International Jade City, Sihui, Zhaoqing, Guangdong",
+        "ja": "広東省肇慶市四会市 国際玉器城ECセンター",
+        "ko": "중국 광둥성 자오칭시 쓰후이 국제 옥기성 전자상거래센터"
       },
       "bannerTitle": {
-        "en": "Integrated Industrial Equipment Solutions",
-        "ja": "産業設備のトータルソリューション",
-        "ko": "산업 장비 통합 솔루션"
+        "en": "Jade World · Online Jade Boutique",
+        "ja": "玉石大世界・オンライン玉器ショップ",
+        "ko": "옥석대세계 · 온라인 옥기 스토어"
       },
       "bannerSubtitle": {
-        "en": "From R&D to delivery and operations, we provide stable, efficient and sustainable industrial capabilities.",
-        "ja": "研究開発から導入・運用まで、安定・高効率・持続可能な産業能力を提供します。",
-        "ko": "제품 개발부터 납품·운영까지 안정적이고 효율적이며 지속 가능한 산업 역량을 제공합니다."
+        "en": "Curated bangles, pendants, jade plaques, and gift ornaments for everyday wear, festive gifting, and light collecting.",
+        "ja": "日常使い、贈り物、ライトコレクション向けに厳選した玉器をご紹介します。",
+        "ko": "일상 착용, 선물, 가벼운 수집에 어울리는 옥기를 엄선해 소개합니다."
       }
     },
     "advantages": {
       "en": [
-        "20+ years of industry experience",
-        "Customized solution design",
-        "Nationwide service network",
-        "Fast delivery and maintenance"
+        "Curated source materials",
+        "Video viewing and re-check support",
+        "Gift box and care guidance included",
+        "7-day appreciation service"
       ],
       "ja": [
-        "20年以上の業界経験",
-        "カスタマイズ設計",
-        "全国サービスネットワーク",
-        "迅速な納入と保守"
+        "厳選した原石と素材",
+        "動画確認と再チェック対応",
+        "ギフト箱とお手入れ案内付き",
+        "7日間の鑑賞サービス"
       ],
       "ko": [
-        "20년 이상의 업계 경험",
-        "맞춤형 솔루션 설계",
-        "전국 서비스 네트워크",
-        "신속한 납품 및 유지보수"
+        "엄선한 원재료",
+        "영상 확인 및 재검수 지원",
+        "선물 박스와 관리 안내 제공",
+        "7일 감상 서비스"
       ]
     },
     "productCategories": {
       "en": [
-        "Ultrasonic Cleaning Equipment",
-        "Automated Conveyor Systems",
-        "Industrial Environmental Solutions",
-        "Custom Production Lines"
+        "Pendants & Charms",
+        "Bangles & Bracelets",
+        "Rings & Jade Plaques",
+        "Gift Ornaments"
       ],
       "ja": [
-        "超音波洗浄設備",
-        "自動搬送システム",
-        "産業環境関連設備",
-        "非標準カスタムライン"
+        "ペンダント・掛け飾り",
+        "バングル・ブレスレット",
+        "玉指輪・玉牌",
+        "贈答用置物"
       ],
       "ko": [
-        "초음파 세정 장비",
-        "자동화 이송 시스템",
-        "산업 환경 설비",
-        "비표준 맞춤형 라인"
+        "펜던트·걸이 장식",
+        "뱅글·팔찌",
+        "옥반지·옥패",
+        "선물용 장식품"
       ]
     },
     "productCategoryDescriptions": {
       "en": [
-        "For precision parts, metal components, and electronic cleaning scenarios.",
-        "Supports multi-station coordination, cycle synchronization, and online traceability.",
-        "Integrated equipment and systems for exhaust gas and wastewater treatment.",
-        "Tailored to process requirements from design and manufacturing to delivery and operations."
+        "Meaningful pieces for daily wear and thoughtful gifting.",
+        "Graceful wrist pieces with smooth form and year-round versatility.",
+        "Elegant shapes for refined daily styling and light gifting.",
+        "Display pieces for opening gifts, housewarming, and festive occasions."
       ],
       "ja": [
-        "精密部品・金属部品・電子部品の洗浄用途に対応。",
-        "多工程連携・タクト同期・オンライン追跡に対応。",
-        "排ガス・排液処理向けの設備およびシステム統合。",
-        "工程要件に合わせ、設計・製造・導入・運用まで対応。"
+        "日常使いにも贈り物にも合わせやすい玉器です。",
+        "手元を上品に見せる、四季使いやすいアイテムです。",
+        "軽やかに身につけられる、上品なデザインの玉器です。",
+        "開業祝いや引っ越し祝いにも選びやすい置物です。"
       ],
       "ko": [
-        "정밀 부품, 금속 부품, 전자 부품 세정 공정에 적용됩니다.",
-        "다공정 연계, 택트 동기화, 온라인 추적을 지원합니다.",
-        "배기가스·폐수 처리를 위한 설비 및 시스템 통합 솔루션입니다.",
-        "공정 요구에 맞춰 설계·제조·납품·운영까지 맞춤 지원합니다."
+        "데일리 착용과 선물용으로 모두 잘 어울립니다.",
+        "손목선을 부드럽게 살려 주는 사계절용 아이템입니다.",
+        "가볍고 단정한 스타일로 일상 코디에 잘 어울립니다.",
+        "개업, 집들이, 명절 선물용으로 잘 어울리는 장식품입니다."
       ]
     },
     "productPageDescription": {
-      "en": "Covering cleaning, conveying, environmental and custom production lines.",
-      "ja": "洗浄・搬送・環境対応・カスタムラインに対応します。",
-      "ko": "세척, 이송, 환경 설비 및 맞춤형 라인을 제공합니다."
+      "en": "From Hetian jade to jadeite and green jade, curated for wearing, gifting, and light collecting.",
+      "ja": "和田玉から翡翠・碧玉まで、身につける・贈る・楽しむための玉器を揃えています。",
+      "ko": "허톈옥부터 비취, 벽옥까지 착용과 선물, 가벼운 수집을 위한 옥기를 모았습니다."
     },
     "contactFormHint": {
-      "en": "After submitting your request, we will contact you within 1 business day.",
-      "ja": "ご要望送信後、1営業日以内にご連絡します。",
-      "ko": "요청을 제출하시면 1영업일 이내에 연락드리겠습니다."
+      "en": "Tell us the style, budget, or recipient you have in mind and our advisor will recommend suitable pieces.",
+      "ja": "ご希望のデザイン、ご予算、贈る相手をお知らせいただければ担当がご提案します。",
+      "ko": "원하는 스타일, 예산, 선물 대상을 남겨 주시면 상담사가 추천해 드립니다."
     },
     "footerIcp": {
-      "en": "Guangdong ICP No. 00000000",
-      "ja": "粤ICP備案 00000000号",
-      "ko": "광둥 ICP 등록번호 00000000"
+      "en": "Guangdong ICP No. 2026000000 | Jade World",
+      "ja": "粤ICP備案 2026000000号 | 玉石大世界",
+      "ko": "광둥 ICP 2026000000 | 옥석대세계"
     }
   },
   "seed": {
     "products": [
       {
-        "name": "HC-800全自动超声波清洗机",
-        "category": "超声波清洗设备",
-        "summary": "适用于五金、电子、汽车零部件等高标准清洗场景。",
-        "image": "/products/p1.jpg",
+        "name": "和田白玉平安扣吊坠",
+        "category": "吊坠挂件",
+        "summary": "线条圆润、白度柔和，适合通勤和日常轻礼赠，寓意平安顺遂。",
+        "image": "/jade/classic-pendant.jpg",
         "features": [
-          "多槽联动工艺",
-          "PLC智能控制",
-          "节能低噪运行"
+          "温润白度",
+          "造型简洁百搭",
+          "送礼寓意平安"
+        ],
+        "nameI18n": {
+          "en": "Hetian White Jade Peace Pendant"
+        },
+        "summaryI18n": {
+          "en": "A soft-toned white jade pendant with a classic circular silhouette for daily wear and gifting."
+        },
+        "featuresI18n": {
+          "en": [
+            "Soft white tone",
+            "Minimal and versatile",
+            "Peaceful gift symbolism"
+          ]
+        },
+        "caseStudies": [
+          {
+            "title": {
+              "zh": "通勤轻雅搭配"
+            },
+            "summary": {
+              "zh": "搭配衬衫、针织或旗袍领口都很自然，适合想要低调提气色的人群。"
+            },
+            "image": "/jade/classic-pendant.jpg"
+          }
         ]
       },
       {
-        "name": "HC-1200喷淋清洗线",
-        "category": "超声波清洗设备",
-        "summary": "连续式喷淋清洗，适配中大批量零件处理。",
-        "image": "/products/p2.jpg",
+        "name": "俄碧圆条玉镯",
+        "category": "手镯手串",
+        "summary": "碧色沉静耐看，圈口顺滑贴腕，适合四季佩戴和节庆送礼。",
+        "image": "/jade/green-bangle.jpg",
         "features": [
-          "模块化结构",
-          "维护便捷",
-          "高效节拍"
+          "色泽沉稳",
+          "圆条顺滑贴腕",
+          "四季佩戴不挑场合"
+        ],
+        "nameI18n": {
+          "en": "Green Jade Round Bangle"
+        },
+        "summaryI18n": {
+          "en": "A deep green bangle with smooth round form, suited to everyday elegance and festive gifting."
+        },
+        "featuresI18n": {
+          "en": [
+            "Calm green hue",
+            "Smooth round profile",
+            "Easy seasonal styling"
+          ]
+        },
+        "caseStudies": [
+          {
+            "title": {
+              "zh": "上班通勤佩戴"
+            },
+            "summary": {
+              "zh": "和衬衫、西装或浅色针织都很协调，适合日常想要一点沉稳玉色的人。"
+            },
+            "image": "/jade/green-bangle.jpg"
+          }
         ]
       },
       {
-        "name": "HC-RB智能输送系统",
-        "category": "自动化输送系统",
-        "summary": "支持多工位智能分拣与在线追溯。",
-        "image": "/products/p3.jpg",
+        "name": "墨白俏色如意玉牌",
+        "category": "玉戒玉牌",
+        "summary": "黑白俏色层次分明，牌型端正，适合喜欢古雅气质与如意寓意的人群。",
+        "image": "/jade/black-white-pendant.jpg",
         "features": [
-          "柔性扩展",
-          "实时监控",
-          "高稳定性"
+          "黑白俏色对比",
+          "牌型端正大方",
+          "如意寓意讨喜"
+        ],
+        "nameI18n": {
+          "en": "Black and White Ruyi Jade Plaque"
+        },
+        "summaryI18n": {
+          "en": "A striking black-and-white jade plaque with ruyi symbolism and a balanced vintage look."
+        },
+        "featuresI18n": {
+          "en": [
+            "Contrasting dual tones",
+            "Balanced plaque silhouette",
+            "Ruyi blessing symbolism"
+          ]
+        },
+        "caseStudies": [
+          {
+            "title": {
+              "zh": "新年礼赠首选"
+            },
+            "summary": {
+              "zh": "适合作为长辈礼物或商务心意，稳重不张扬，寓意顺心如意。"
+            },
+            "image": "/jade/black-white-pendant.jpg"
+          }
         ]
       },
       {
-        "name": "HC-VOC废气处理装置",
-        "category": "工业环保配套",
-        "summary": "面向喷涂、化工等场景的废气净化解决方案。",
-        "image": "/products/p4.jpg",
+        "name": "古韵玉环戒",
+        "category": "玉戒玉牌",
+        "summary": "小巧轻盈、轮廓古雅，适合情侣互赠或作为日常点睛配饰。",
+        "image": "/jade/jade-ring.jpg",
         "features": [
-          "净化效率高",
-          "运行成本低",
-          "智能告警"
+          "环形古雅",
+          "轻盈不压手",
+          "适合日常叠搭"
+        ],
+        "nameI18n": {
+          "en": "Vintage Jade Ring"
+        },
+        "summaryI18n": {
+          "en": "A lightweight vintage-inspired jade ring that works well for everyday styling and meaningful gifting."
+        },
+        "featuresI18n": {
+          "en": [
+            "Vintage circular profile",
+            "Lightweight feel",
+            "Easy to pair daily"
+          ]
+        },
+        "caseStudies": [
+          {
+            "title": {
+              "zh": "情侣互赠小物"
+            },
+            "summary": {
+              "zh": "体量轻巧、寓意圆满，适合纪念日与生日互赠。"
+            },
+            "image": "/jade/jade-ring.jpg"
+          }
+        ]
+      },
+      {
+        "name": "青玉如意礼赠摆件",
+        "category": "礼赠摆件",
+        "summary": "适合乔迁、开业与节庆拜访，摆放于玄关、书桌或会客区都很得体。",
+        "image": "/jade/gift-ornament.jpg",
+        "features": [
+          "适合礼赠场景",
+          "陈列气质稳重",
+          "附礼盒包装建议"
+        ],
+        "nameI18n": {
+          "en": "Green Jade Gift Ornament"
+        },
+        "summaryI18n": {
+          "en": "A refined green jade ornament for openings, housewarming gifts, and festive visits."
+        },
+        "featuresI18n": {
+          "en": [
+            "Gift-ready presence",
+            "Elegant display value",
+            "Boxed presentation guidance"
+          ]
+        },
+        "caseStudies": [
+          {
+            "title": {
+              "zh": "乔迁与开业贺礼"
+            },
+            "summary": {
+              "zh": "放在前台、书房或玄关都很合适，既有体面度也有传统好寓意。"
+            },
+            "image": "/jade/gift-ornament.jpg"
+          }
         ]
       }
     ],
     "news": [
       {
-        "title": "华辰工业新产线交付华南客户",
-        "titleI18n": {
-          "en": "Huachen Delivers New Production Line to South China Client",
-          "ja": "華辰工業、華南顧客向け新ラインを納入",
-          "ko": "화천공업, 화남 고객사에 신규 생산라인 납품"
-        },
-        "date": "2026-01-15",
-        "summary": "自动化清洗与输送一体化产线成功投运，产能提升30%。",
-        "summaryI18n": {
-          "en": "The integrated automation line for cleaning and conveying is now in operation, increasing capacity by 30%.",
-          "ja": "自動洗浄・搬送一体ラインが稼働し、生産能力が30%向上しました。",
-          "ko": "자동 세정·이송 통합 라인이 가동되어 생산능력이 30% 향상되었습니다."
-        },
-        "content": "本次项目覆盖清洗、烘干、输送、检测等关键环节，帮助客户实现高效稳定生产。"
-        ,
-        "contentI18n": {
-          "en": "This project covered key stages including cleaning, drying, conveying, and inspection, helping the customer achieve efficient and stable production.",
-          "ja": "本プロジェクトは洗浄・乾燥・搬送・検査などの主要工程をカバーし、顧客の高効率かつ安定した生産を実現しました。",
-          "ko": "이번 프로젝트는 세정, 건조, 이송, 검사 등 핵심 공정을 포함하여 고객사의 고효율·안정 생산을 지원했습니다."
-        }
+        "title": "玉石大世界上线春季温润玉色专题",
+        "date": "2026-03-28",
+        "summary": "围绕白玉、碧玉和淡色系配饰，整理适合通勤与轻礼赠的入门款式。",
+        "content": "本期专题围绕“轻佩戴、低门槛、好搭配”展开，精选平安扣、圆条手镯与小巧玉戒等多款玉器，适合想从第一件玉器开始尝试的顾客。"
       },
       {
-        "title": "公司通过智能制造能力再认证",
-        "titleI18n": {
-          "en": "Company Passes Smart Manufacturing Capability Re-Certification",
-          "ja": "スマート製造能力の再認証を取得",
-          "ko": "스마트 제조 역량 재인증 통과"
-        },
-        "date": "2025-12-08",
-        "summary": "在研发、生产、交付与服务环节持续强化数字化能力。",
-        "summaryI18n": {
-          "en": "We continue to strengthen digital capabilities across R&D, production, delivery, and service.",
-          "ja": "研究開発・生産・納入・サービスの各段階でデジタル能力を継続的に強化しています。",
-          "ko": "R&D, 생산, 납품, 서비스 전 과정에서 디지털 역량을 지속적으로 강화하고 있습니다."
-        },
-        "content": "华辰工业持续投入研发与流程优化，推动产品质量与交付效率双提升。"
-        ,
-        "contentI18n": {
-          "en": "Huachen keeps investing in R&D and process optimization to improve both product quality and delivery efficiency.",
-          "ja": "華辰工業は研究開発とプロセス最適化への投資を継続し、品質と納入効率の双方を向上させています。",
-          "ko": "화천공업은 연구개발과 공정 최적화에 지속 투자하여 제품 품질과 납품 효율을 함께 개선하고 있습니다."
-        }
+        "title": "新手选玉指南：先看颜色，再看器形与佩戴场景",
+        "date": "2026-03-22",
+        "summary": "从白度、油润感到圈口、牌型，帮助第一次接触玉器的顾客快速建立判断逻辑。",
+        "content": "如果是日常佩戴，建议优先考虑轻量、圆润、易搭配的款式；如果是节庆送礼，则更适合选择寓意明确、包装完整的吊坠或摆件。选购前先想清楚预算、肤色和穿衣风格，往往更容易找到合适的玉器。"
       },
       {
-        "title": "华辰工业亮相华东工业展",
-        "titleI18n": {
-          "en": "Huachen Appears at East China Industrial Expo",
-          "ja": "華辰工業、華東工業展示会に出展",
-          "ko": "화천공업, 화동 산업 전시회 참가"
-        },
-        "date": "2025-11-20",
-        "summary": "展示清洗设备与环保配套方案，获多家制造企业关注。",
-        "summaryI18n": {
-          "en": "The company showcased cleaning equipment and environmental solutions, attracting strong interest from manufacturers.",
-          "ja": "洗浄設備と環境対応ソリューションを展示し、多くの製造企業から注目を集めました。",
-          "ko": "세정 장비와 환경 솔루션을 선보여 다수 제조기업의 관심을 받았습니다."
-        },
-        "content": "展会期间，华辰工业与多家客户达成合作意向，共同推进智能制造升级。"
-        ,
-        "contentI18n": {
-          "en": "During the expo, Huachen reached cooperation intentions with multiple clients to jointly advance smart manufacturing upgrades.",
-          "ja": "展示会期間中、華辰工業は複数の顧客と協業意向を確認し、スマート製造の高度化を共同で推進しました。",
-          "ko": "전시회 기간 동안 화천공업은 여러 고객사와 협력 의향을 확인하고 스마트 제조 고도화를 함께 추진했습니다."
-        }
+        "title": "礼赠玉器怎么挑：生日、乔迁、长辈送礼各有侧重",
+        "date": "2026-03-15",
+        "summary": "不同送礼场景适合不同器型与寓意，选对款式比单纯选“大件”更重要。",
+        "content": "送长辈可优先考虑平安扣、如意牌和稳重大方的手镯；乔迁和开业更适合摆件与玉牌类礼物；生日或纪念日则推荐小巧精致、方便日常佩戴的戒环和挂件。玉石大世界也提供礼盒搭配建议，帮助顾客更体面地完成礼赠。"
       }
     ],
     "admins": [

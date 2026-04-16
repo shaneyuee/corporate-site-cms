@@ -20,15 +20,15 @@ export default async function SiteLayout({ children }: { children: ReactNode }) 
   ];
 
   return (
-    <div className="min-h-screen bg-[linear-gradient(180deg,#f8fafc_0%,#ffffff_20%,#ffffff_100%)] text-gray-800">
-      <header className="sticky top-0 z-30 border-b border-slate-200/70 bg-white/85 backdrop-blur">
+    <div className="min-h-screen bg-[linear-gradient(180deg,#edf7ee_0%,#f7fbf5_18%,#f4fbf4_100%)] text-gray-800">
+      <header className="sticky top-0 z-30 border-b border-emerald-100/80 bg-[#f7fbf5]/88 backdrop-blur">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-3">
           <nav className="flex flex-wrap items-center gap-2 text-sm font-semibold md:text-base">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="rounded-full px-3 py-1.5 text-slate-700 transition hover:bg-sky-50 hover:text-sky-700"
+                className="rounded-full px-3 py-1.5 text-slate-700 transition hover:bg-emerald-50 hover:text-emerald-800"
               >
                 {item.label}
               </Link>
@@ -40,7 +40,7 @@ export default async function SiteLayout({ children }: { children: ReactNode }) 
         </div>
       </header>
       <main>{children}</main>
-      <footer className="mt-12 border-t border-border bg-slate-50">
+      <footer className="mt-12 border-t border-border bg-emerald-50/70">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-8 text-sm text-muted md:flex-row md:items-center md:justify-between">
           <p>© 2026 {localized.company.name}</p>
           <p>{localized.footerIcp}</p>

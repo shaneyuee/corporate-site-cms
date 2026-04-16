@@ -70,7 +70,7 @@ const adminSettingsUi: Record<LocaleKey, Record<string, string>> = {
     bannerTitlePh: "首页Banner标题",
     bannerSubtitlePh: "首页Banner副标题",
     heroBackgroundPh: "首页背景图URL（建议 16:9）",
-    heroBackgroundHint: "可直接上传图片或填写URL，首页将使用该图作为“工业设备整体解决方案”背景。",
+    heroBackgroundHint: "可直接上传图片或填写URL，首页将使用该图作为商城首屏背景。",
     uploading: "图片上传中...",
     uploadFailed: "上传失败",
     contactHintPh: "联系页提示文案",

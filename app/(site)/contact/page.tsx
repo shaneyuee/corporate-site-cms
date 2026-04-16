@@ -11,31 +11,31 @@ export default async function ContactPage() {
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 md:py-12">
-      <section className="overflow-hidden rounded-3xl border border-slate-200 bg-gradient-to-br from-sky-50 via-cyan-50 to-emerald-50 p-6 md:p-8">
+      <section className="overflow-hidden rounded-3xl border border-emerald-100 bg-gradient-to-br from-emerald-50 via-lime-50 to-green-100 p-6 md:p-8">
         <h1 className="text-3xl font-bold text-slate-900">{dict.contactTitle}</h1>
         <p className="mt-3 max-w-3xl text-sm text-slate-600">{dict.contactSubTitle}</p>
         <div className="mt-5 flex flex-wrap gap-2">
-          <a href={`tel:${localizedSite.company.phone.replace(/\s+/g, "")}`} className="rounded-full border border-sky-200 bg-white px-4 py-2 text-sm font-semibold text-sky-700 shadow-sm">
+          <a href={`tel:${localizedSite.company.phone.replace(/\s+/g, "")}`} className="rounded-full border border-emerald-200 bg-[#fcfefb] px-4 py-2 text-sm font-semibold text-emerald-800 shadow-sm">
             {dict.phoneLabel} · {localizedSite.company.phone}
           </a>
-          <a href={`mailto:${localizedSite.company.email}`} className="rounded-full border border-cyan-200 bg-white px-4 py-2 text-sm font-semibold text-cyan-700 shadow-sm">
+          <a href={`mailto:${localizedSite.company.email}`} className="rounded-full border border-lime-200 bg-[#fcfefb] px-4 py-2 text-sm font-semibold text-green-800 shadow-sm">
             {dict.emailLabel} · {localizedSite.company.email}
           </a>
         </div>
       </section>
 
       <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
-        <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-7">
+        <section className="rounded-2xl border border-emerald-100 bg-[#fcfefb] p-6 shadow-sm shadow-emerald-900/5 md:p-7">
           <h2 className="text-lg font-semibold text-slate-900">{dict.contactInfo}</h2>
           <div className="mt-4 space-y-3 text-sm text-slate-700">
-            <p className="rounded-xl border border-slate-100 bg-slate-50 px-4 py-3">{dict.companyLabel}：{localizedSite.company.name}</p>
-            <p className="rounded-xl border border-slate-100 bg-slate-50 px-4 py-3">{dict.phoneLabel}：{localizedSite.company.phone}</p>
-            <p className="rounded-xl border border-slate-100 bg-slate-50 px-4 py-3">{dict.emailLabel}：{localizedSite.company.email}</p>
-            <p className="rounded-xl border border-slate-100 bg-slate-50 px-4 py-3">{dict.addressLabel}：{localizedSite.company.address}</p>
+            <p className="rounded-xl border border-emerald-100 bg-emerald-50/60 px-4 py-3">{dict.companyLabel}：{localizedSite.company.name}</p>
+            <p className="rounded-xl border border-emerald-100 bg-emerald-50/60 px-4 py-3">{dict.phoneLabel}：{localizedSite.company.phone}</p>
+            <p className="rounded-xl border border-emerald-100 bg-emerald-50/60 px-4 py-3">{dict.emailLabel}：{localizedSite.company.email}</p>
+            <p className="rounded-xl border border-emerald-100 bg-emerald-50/60 px-4 py-3">{dict.addressLabel}：{localizedSite.company.address}</p>
           </div>
         </section>
 
-        <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-7">
+        <section className="rounded-2xl border border-emerald-100 bg-[#fcfefb] p-6 shadow-sm shadow-emerald-900/5 md:p-7">
           <h2 className="text-lg font-semibold text-slate-900">{dict.demandSubmit}</h2>
           <ContactDemandForm
             locale={locale}

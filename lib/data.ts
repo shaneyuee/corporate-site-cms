@@ -148,7 +148,7 @@ export async function readSiteData(): Promise<SiteData> {
     ...(parsed.i18n.advantages ?? {}),
   };
 
-  parsed.productPageDescription = parsed.productPageDescription || "覆盖清洗、输送、环保与非标产线，支持方案定制与交付。";
+  parsed.productPageDescription = parsed.productPageDescription || "从和田玉到翡翠碧玉，覆盖日常佩戴、礼赠收藏与节庆选礼场景。";
   parsed.i18n.productPageDescription = withZhFallback(parsed.productPageDescription, parsed.i18n.productPageDescription);
 
   parsed.i18n.contactFormHint = withZhFallback(parsed.contactFormHint, parsed.i18n.contactFormHint);
